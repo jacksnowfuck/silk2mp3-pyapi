@@ -1,7 +1,7 @@
 # silk2mp3-pyapi
 把微信语音的silk格式转化成mp3的api服务
 
-#### 由于所在环境到debian的镜像源比较慢，所以底层镜像用的是debian:bullseye
+#### PS. 由于所在环境到debian的镜像源比较慢，所以底层镜像用的是debian:bullseye，打包后镜像会有点大，网络环境好的，可以调整DockerFile内容，用轻量的python镜像
 
 #### 操作步骤：
 1. docker-compose build
