@@ -1,0 +1,12 @@
+version: '3.3'  # Docker Compose 文件版本
+
+services:
+  silk_to_mp3:
+    build:
+      context: .  # 指定 Dockerfile 所在目录
+      dockerfile: Dockerfile
+    ports:
+      - "5500:5500"  # 映射容器的端口到主机
+    volumes:
+      - ./data:/app/data  # 挂载主机目录到容器（可选：用于持久化存储）
+    restart: unless-stopped  # 自动重启策略
