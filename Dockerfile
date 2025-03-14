@@ -5,7 +5,8 @@ FROM docker-0.unsee.tech/debian:bullseye
 WORKDIR /app
 
 # 把 Flask 应用程序复制到工作目录
-COPY silk app.py requirements.txt ./
+COPY silk /app/silk
+COPY app.py requirements.txt ./
 
 # 安装系统工具和 Silk Decoder
 RUN rm -rf /etc/apt/sources.list.d/* && \
