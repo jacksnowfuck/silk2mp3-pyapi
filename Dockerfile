@@ -19,7 +19,7 @@ RUN rm -rf /etc/apt/sources.list.d/* && \
     apt-get install -y python3 python3-pip ffmpeg wget gcc make unzip && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
-    cd app/silk && \
+    cd /app/silk && \
     make && \
     cp decoder /usr/local/bin/silk-decoder && \
     cd .. && rm -rf silk && \
